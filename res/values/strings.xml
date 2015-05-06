@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Smart Organizer</string>
+    <string name="menu_reminder">Add Reminder</string>
+    <string name="menu_voicereminder">Voice Reminder</string>
+    <string name="menu_picturereminder">Picture Reminder</string>
+    <string name="menu_mapreminder">Map Reminder</string>
+	<string name="menu_calendar">Calendar</string>        
+    <string name="menu_signup">Sign up</string>
+    <string name="menu_login">Login</string>
+    <string name="menu_logout">Logout</string>
+    <string name="audioreminder_save">Save</string>
+    <string name="audioreminder_done">Done</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="label_title">HOME</string>
+    <string name="btn_dept">Department list</string>
+	<string name="date_picker"><u>Click here to enter your Date of Birth</u></string>
+	<string-array 
+	    name="state_list">
+	    <item value="AL">AL</item>
+		<item value="AK">AK</item>
+		<item value="AZ">AZ</item>
+		<item value="AR">AR</item>
+		<item value="CA">CA</item>
+		<item value="CO">CO</item>
+		<item value="CT">CT</item>
+		<item value="DE">DE</item>
+		<item value="DC">DC</item>
+		<item value="FL">FL</item>
+		<item value="GA">GA</item>
+		<item value="HI">HI</item>
+		<item value="ID">ID</item>
+		<item value="IL">IL</item>
+		<item value="IN">IN</item>
+		<item value="IA">IA</item>
+		<item value="KS">KS</item>
+		<item value="KY">KY</item>
+		<item value="LA">LA</item>
+		<item value="ME">ME</item>
+		<item value="MD">MD</item>
+		<item value="MA">MA</item>
+		<item value="MI">MI</item>
+		<item value="MN">MN</item>
+		<item value="MS">MS</item>
+		<item value="MO">MO</item>
+		<item value="MT">MT</item>
+		<item value="NE">NE</item>
+		<item value="NV">NV</item>
+		<item value="NH">NH</item>
+		<item value="NJ">NJ</item>
+		<item value="NM">NM</item>
+		<item value="NY">NY</item>
+		<item value="NC">NC</item>
+		<item value="ND">ND</item>
+		<item value="OH">OH</item>
+		<item value="OK">OK</item>
+		<item value="OR">OR</item>
+		<item value="PA">PA</item>
+		<item value="RI">RI</item>
+		<item value="SC">SC</item>
+		<item value="SD">SD</item>
+		<item value="TN">TN</item>
+		<item value="TX">TX</item>
+		<item value="UT">UT</item>
+		<item value="VT">VT</item>
+		<item value="VA">VA</item>
+		<item value="WA">WA</item>
+		<item value="WV">WV</item>
+		<item value="WI">WI</item>
+		<item value="WY">WY</item>	   
+	</string-array>	
+	<string-array 
+	    name="list_month">
+	    <item>January</item>
+	    <item>February</item>
+	    <item>March</item>
+	    <item>April</item>
+	    <item>May</item>
+	    <item>June</item>
+	    <item>July</item>
+	    <item>August</item>
+	    <item>September</item>
+	    <item>October</item>
+	    <item>November</item>
+	    <item>December</item>
+	</string-array>	
+	<string-array 
+	    name="priority"
+	    >
+	    <item>URGENT</item>
+	    <item>REGULAR</item>
+	    <item>NOT IMPORTANT</item>	    
+	</string-array>
+	<string-array 
+	    name="remindertype"
+	    >
+	    <item>ALARM</item>
+	    <item>EMAIL</item>
+	    <item>ALARM AND EMAIL</item>	    
+	</string-array>	
+	<string-array 
+	    name="navigationdrawer">
+	    <item>News</item>
+	    <item>Watch Shows</item>
+	    <item>Music Player</item>
+	    <item>To do List</item>
+	    <item>Notes</item>
+	</string-array>
+	<string-array 
+	    name="time">
+	    <item>Morning(before 10am)</item>
+	    <item>Noon(10am - 12am)</item>
+	    <item>Afternoon(1pm - 5pm)</item>
+	    <item>After 6pm</item>
+	</string-array>
+	<string-array
+	    name="time_option_arr">
+	    <item>Remaining</item>
+	</string-array>
+	<string-array
+	    name="date_format_arr">
+	    <item>MM/dd/yyyy</item>	    
+	</string-array>		
+	<string-array
+	    name="val_arr">
+	    
+	</string-array>
+	<string-array
+	    name="date_range_arr">	    
+	</string-array>
+</resources>

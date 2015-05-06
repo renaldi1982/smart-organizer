@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:padding="6dip"
+ android:focusable="false"
+ android:background="@xml/list_selector">
+
+	<TextView
+		android:id="@+id/mapreminder_tasklistitem"
+	 	android:layout_height="wrap_content"
+	 	android:layout_width="fill_parent"
+		android:textSize="16sp"
+		android:textColor="@color/black"
+	 	android:padding="2dip"/>
+
+</LinearLayout>

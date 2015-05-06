@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+	    android:id="@+id/mapreminder_tasklist"
+	    android:orderInCategory="2"
+	    android:showAsAction="always"
+	    android:icon="@drawable/ic_mapremindertasklist"	    
+	    android:title="Task List"
+	    />
+    
+	<item 
+	    android:id="@+id/mapreminder_locationlist"
+	    android:orderInCategory="3"
+	    android:showAsAction="always"
+	    android:icon="@drawable/ic_mapreminderlocationlist"
+	    android:title="Location List"
+	    />
+	
+	<item 
+	    android:id="@+id/mapreminder_done"
+	    android:orderInCategory="199"
+	    android:showAsAction="ifRoom"
+	    android:icon="@drawable/ic_done"
+	    android:title="Done"
+	    />
+	
+	<item 
+	    android:id="@+id/mapreminder_addresslookup"
+	    android:orderInCategory="4"
+	    android:showAsAction="always"
+	    android:icon="@drawable/ic_mapreminderaddresslookup"
+	    android:title="Done"
+	    />
+	
+	<item 
+	    android:id="@+id/mapreminder_back"
+	    android:orderInCategory="198"
+	    android:showAsAction="ifRoom"
+	    android:icon="@drawable/ic_back"
+	    android:title="Home"	    	   
+	    />
+	
+	<item 
+	    android:id="@+id/mapreminder_changeview"
+	    android:orderInCategory="101"
+	    android:showAsAction="ifRoom"
+	    android:icon="@drawable/ic_mapreminder_changeview"
+	    android:title="Change Map View"
+	    />
+	
+	<item 
+	    android:id="@+id/mapreminder_calendar"
+	    android:orderInCategory="1"
+	    android:showAsAction="ifRoom"
+	    android:icon="@drawable/ic_calendar"
+	    android:title="Calendar"
+	    />
+</menu>

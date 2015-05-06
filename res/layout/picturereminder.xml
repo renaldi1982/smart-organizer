@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/picture_reminderlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:background="@color/black">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageViewFullSized"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/background_roundcorner" />
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Take Photo"
+        android:id="@+id/btn_takephoto"
+        android:ems="10"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_margin="10dp" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Notes"        
+        android:id="@+id/btn_takenote"
+        android:ems="6"              
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"        
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewThumbnail"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="72dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:src="@drawable/background_roundcorner" />           
+
+</RelativeLayout>

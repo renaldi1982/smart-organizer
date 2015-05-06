@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edu.uco.rnolastname.program6.app.CustomCalendarLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/calendar_mainlayout"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"     
+    android:background="@color/holo"
+	android:orientation="vertical" >
+	
+	<LinearLayout android:id="@+id/buttonlayout" 
+		android:layout_width="fill_parent" 
+		android:layout_height="60sp" 
+		android:background="@color/orange" 
+		android:gravity="start|top" 
+		android:height="60sp" 
+		android:orientation="horizontal" >
+ 		
+ 		<Button android:id="@+id/settings" 
+			android:layout_width="wrap_content" 
+			android:layout_height="fill_parent" 
+			android:layout_gravity="center"
+			android:background="@drawable/calendar_settings" 
+			/>
+ 
+ 		<ImageView android:id="@+id/prevMonth" 
+			android:layout_width="wrap_content" 
+			android:layout_height="fill_parent" 
+			android:layout_gravity="center" 
+			android:layout_marginStart="10sp" 
+			android:src="@drawable/calendar_left_arrow_selector" > 
+		</ImageView>
+		 
+		<TextView android:id="@+id/currentMonth" 
+			android:layout_width="0dp" 
+			android:layout_height="60sp" 
+			android:layout_weight="0.6" 
+			android:gravity="center" 
+			android:textAppearance="?android:attr/textAppearanceMedium" 
+			android:textColor="#FFFFFF" >
+		</TextView>
+			  
+		<ImageView android:id="@+id/nextMonth" 
+			android:layout_width="wrap_content" 
+			android:layout_height="fill_parent" 
+			android:layout_gravity="center" 
+			android:layout_marginEnd="10sp" 
+			android:src="@drawable/calendar_right_arrow_selector" > 
+		</ImageView>
+		 
+		<Button
+		    android:id="@+id/addTime"
+		    android:layout_width="54sp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="0.01"
+		    android:background="@drawable/calendar_plus" />
+		
+	</LinearLayout> 
+	
+	<Button android:id="@+id/selectedDayMonthYear" 
+	    android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_gravity="center" 
+		android:background="@color/holo" 
+		android:textAppearance="?android:attr/textAppearanceMedium" 
+		android:textColor="@color/white" > 
+	</Button> 
+
+	<LinearLayout 
+	    android:layout_width="match_parent" 
+		android:layout_height="wrap_content" 
+		android:layout_gravity="center" > 
+
+   		<ImageView android:id="@+id/calendarheader" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_gravity="center"		
+			android:scaleType="fitXY"
+			android:background="@color/holo"
+			android:src="@drawable/calendar_header"> 
+		</ImageView> 
+	</LinearLayout> 
+	
+	<GridView 
+	    android:id="@+id/calendar" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:numColumns="7" > 
+	</GridView>
+	 
+</edu.uco.rnolastname.program6.app.CustomCalendarLinearLayout>
+

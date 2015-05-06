@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edu.uco.rnolastname.program6.app.CustomRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:id="@+id/signup_layout"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  
+    android:focusable="true"
+	android:focusableInTouchMode="true"   
+    android:background="#ffffff"> 
+    
+    <TextView
+	    android:id="@+id/label_title"	    
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:gravity="center"       	       	
+       	android:textSize="22sp"
+       	android:textColor="@color/lime_green"    
+       	android:layout_marginTop="16dp" 
+       	android:layout_marginStart="64dp"
+    	android:layout_marginEnd="64dp"     	     	      
+       	android:textStyle="bold|italic"
+       	android:text="Account Information" />	       	
+	<View 
+	    android:id="@+id/line_title"
+	    android:layout_below="@id/label_title"
+   		android:layout_width="fill_parent"   				   		   	
+   		android:layout_height="2dp"       
+   		android:layout_marginTop="10dp"
+   		android:layout_marginStart="64dp"
+    	android:layout_marginEnd="64dp"    
+   		android:background="#000000" />
+    
+    <TextView 
+        android:id="@+id/label_username"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/line_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginStart="64dp"               
+        android:text="Username"        
+        />
+    
+    <TextView 
+        android:id="@+id/label_password"     
+        android:layout_below="@id/label_username"
+        android:layout_marginTop="20dp"   
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"                
+        android:text="Password"        
+        />
+
+    <EditText
+        android:id="@+id/txt_username"
+        android:layout_below="@id/line_title"
+        android:layout_toEndOf="@id/label_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"    
+        android:layout_alignBaseline="@id/label_username"            
+        android:layout_marginStart="48dp"        
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txt_password"
+        android:layout_below="@id/txt_username"
+        android:layout_toEndOf="@id/label_password"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_username"
+        android:layout_alignBaseline="@id/label_password"          
+        android:ems="10"
+        android:inputType="textPassword" />
+	
+    <TextView
+	    android:id="@+id/label_user"	
+	    android:layout_below="@id/label_password"    
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"    
+       	android:gravity="center" 
+       	android:layout_marginTop="20dp"         		       	       
+       	android:layout_marginStart="64dp"
+       	android:layout_marginEnd="64dp"
+       	android:textSize="22sp"
+       	android:textColor="@color/lime_green"       	       
+       	android:textStyle="bold|italic"       	
+       	android:text="User Information" />	       	
+	<View 
+	    android:id="@+id/line_user"
+	    android:layout_below="@id/label_user"
+   		android:layout_width="fill_parent"   				   		   	
+   		android:layout_height="2dp"       
+   		android:layout_marginTop="10dp"
+   		android:layout_marginStart="64dp"
+   		android:layout_marginEnd="64dp"
+   		android:background="#000000" />
+	
+	<TableLayout 
+	    android:id="@+id/table_user"
+	    android:layout_below="@id/line_user"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginStart="64dp"
+       	android:layout_marginEnd="64dp">
+	    <TableRow 
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	>
+	        <TextView
+			    android:id="@+id/label_fname"			    
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"	    			    	   
+			    android:text="Name" />
+	        <EditText 
+	            android:id="@+id/txt_fname"	 	                       
+			    android:layout_width="150dp"
+			    android:layout_height="wrap_content"	
+			    android:layout_marginStart="32dp"			    		   
+			    android:inputType="textPersonName"
+			    android:hint="First,Last"
+	            />	            	            		   
+	        <TextView
+			    android:id="@+id/label_gender"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:paddingStart="50dp"
+				android:paddingEnd="5dp"			    	    			        
+			    android:text="Gender" />
+	        <RadioGroup 
+	            android:id="@+id/radgroup_sex"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginStart="26dp"    	            
+	            >
+	            <RadioButton
+				    android:id="@+id/rad_male"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"				    
+				    android:text="Male" />
+		        <RadioButton
+				    android:id="@+id/rad_female"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"				      
+				    android:text="Female" />
+	        </RadioGroup>	        	        
+	    </TableRow>
+	    <TableRow
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	>
+	        <TextView
+			    android:id="@+id/label_dob"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"	   			       
+			    android:text="Date of Birth" />
+	        <Spinner 
+	            android:id="@+id/spinner_dob_month"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textAlignment="center"
+	            android:layout_marginStart="32dp"
+	            />
+	        <Spinner 
+	            android:id="@+id/spinner_dob_day"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textAlignment="center"
+	            android:layout_marginStart="32dp"
+	            />
+	        <Spinner 
+	            android:id="@+id/spinner_dob_year"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textAlignment="center"
+	            android:layout_marginStart="32dp"
+	            />
+	    </TableRow>
+	    <TableRow
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginTop="5dp">
+	        <TextView
+			    android:id="@+id/label_address"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"	    			    	   
+			    android:text="Address" />
+	        <EditText
+			    android:id="@+id/txt_address"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginStart="32dp"
+			    android:inputType="textPostalAddress" />
+	    </TableRow>
+	    <TableRow
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginTop="5dp">
+	        <TextView
+			    android:id="@+id/label_city"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"	    			    	   
+			    android:text="City" />
+	        <Spinner
+			    android:id="@+id/list_city"
+			    android:layout_width="120dp"
+			    android:layout_height="wrap_content"	    
+			    android:layout_marginStart="32dp"
+			    android:textAlignment="center"/>
+	        <TextView
+			    android:id="@+id/label_state"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="right"
+			    android:layout_marginStart="32dp"  
+			    android:text="State" />	        
+	        <Spinner 
+			    android:id="@+id/list_state"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"	    			    
+			    android:textAlignment="center"/>			    			
+			<TextView
+			    android:id="@+id/label_zip"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginStart="32dp"  
+			    android:text="Zip Code" />			
+			<EditText 
+			    android:id="@+id/txt_zip"
+			    android:layout_width="100dp"
+			    android:layout_height="wrap_content"
+			    android:layout_marginStart="10dp"
+			    android:inputType="number"/>
+	    </TableRow>
+	    <TableRow 
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginTop="5dp">
+	        <TextView
+			    android:id="@+id/label_email"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"	    			    
+			    android:text="Email"
+			    android:labelFor="@+id/txt_email" />
+			<EditText
+			    android:id="@id/txt_email"
+			    android:layout_width="220dp"
+			    android:layout_height="wrap_content"
+			    android:layout_marginStart="32dp"	            
+			    android:inputType="textEmailAddress" />	    		        	        
+	    </TableRow>
+	    
+	</TableLayout>
+	
+</edu.uco.rnolastname.program6.app.CustomRelativeLayout>

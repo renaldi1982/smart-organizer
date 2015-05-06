@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+    xmlns:tools="http://schemas.android.com/tools"       
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"        
+    tools:context="edu.uco.rnolastname.program6.app.MainActivity" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"   		
+        >
+		<TextView
+		    android:id="@+id/label_title"	    
+	       	android:layout_width="wrap_content"
+	       	android:layout_height="wrap_content"       	
+	       	android:layout_centerHorizontal="true"
+	       	android:text="@string/label_title"
+	       	android:textSize="27sp"
+	       	android:textColor="#51E344"       	       
+	       	android:textStyle="bold|italic" />	      
+	       						
+		<FrameLayout 
+		    android:id="@+id/fBar_container"
+		    android:layout_below="@id/label_title"
+		    android:layout_marginTop="32dp"
+		    android:layout_marginStart="48dp"
+		    android:layout_marginEnd="32dp"
+		    android:layout_alignParentStart="true"		    
+		    android:layout_width="200dp"		    
+		    android:layout_height="wrap_content"	    
+		    />		
+		<FrameLayout 
+		    android:id="@+id/fWeb_container"		    
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"			    	    		   		    		    	    	 
+		    />		
+		    
+		<FrameLayout 
+		    android:id="@+id/fContent"
+		    android:layout_below="@id/label_title"
+		    android:layout_toEndOf="@id/fBar_container"	
+		    android:layout_marginStart="120dp"
+		    android:layout_marginTop="32dp"		    
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    />
+<!-- 		    android:layout_marginTop="40dp"		     -->
+<!-- 		     -->
+<!-- 		    android:layout_marginBottom="20dp"		     -->
+		    	
+		    				   		
+	</RelativeLayout>	
+</RelativeLayout>

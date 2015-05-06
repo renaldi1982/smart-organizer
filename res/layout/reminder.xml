@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="450dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"    
+    >
+ 
+    <RelativeLayout
+        android:id="@+id/menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="78dp"
+        >
+ 
+<!--         <TextView -->
+<!--             android:id="@+id/heading_tv" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentStart="true" -->
+<!--             android:layout_alignParentTop="true"  -->
+<!--             android:layout_marginStart="20dp" -->
+<!--             android:textSize="30dp"             -->
+<!--             android:textColor="@color/white"           -->
+<!--             android:text="Reminder" /> -->
+ 
+<!--         <ImageButton -->
+<!--             android:id="@+id/imgbtn_add" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentEnd="true" -->
+<!--             android:layout_alignParentTop="true"                       -->
+<!--             android:background="@null" -->
+<!--             android:src="@drawable/reminder_add" /> -->
+         
+<!--         <ImageButton -->
+<!--             android:id="@+id/imgbtn_preferences" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentTop="true" -->
+<!--             android:layout_toStartOf="@id/imgbtn_add"             -->
+<!--             android:background="@null" -->
+<!--             android:src="@drawable/reminder_preferences" />            -->
+ 
+    </RelativeLayout>
+<!--  	<View  -->
+<!-- 		    android:id="@+id/line_title" -->
+<!-- 	   		android:layout_width="fill_parent"   				   		   	 -->
+<!-- 	   		android:layout_height="1dp"        -->
+<!-- 	   		android:layout_marginTop="10dp" -->
+<!-- 	   		android:layout_marginBottom="10dp" -->
+<!-- 	   		android:background="#8C595E59" /> -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"        
+        android:gravity="center_vertical" >
+ 
+        <ImageButton
+            android:id="@+id/imgbtn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:background="@null"
+            android:src="@drawable/reminder_leftarrow" />
+         
+        <TextView
+            android:id="@+id/range_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text=" Today " />
+         
+        <ImageButton
+            android:id="@+id/imgbtn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:background="@null"
+            android:src="@drawable/reminder_rightarrow" />             
+         
+    </LinearLayout>
+     
+    <LinearLayout
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+          
+        <ListView android:id="@+id/list_task"
+                  android:layout_width="wrap_content"
+                  android:layout_height="fill_parent"
+                  android:divider="@color/list_divider"
+                  android:dividerHeight="1dip"                  
+                  android:listSelector="@xml/list_selector"
+                  android:cacheColorHint="#00000000"
+                  android:drawSelectorOnTop="false"
+                  />
+         
+<!--         <TextView android:id="@+id/list_txtempty" -->
+<!--                   android:layout_width="match_parent" -->
+<!--                   android:layout_height="match_parent" -->
+<!--                   android:layout_gravity="center" -->
+<!--                   android:textSize="12sp" -->
+<!--                   android:textAlignment="center" -->
+<!--                   android:text="No data" /> -->
+                 
+    </LinearLayout>    
+ 
+</LinearLayout>

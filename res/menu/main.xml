@@ -1,0 +1,78 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.uco.rnolastname.program6.MainActivity">
+
+<!--     <item -->
+<!--         android:id="@+id/action_settings" -->
+<!--         android:orderInCategory="100" -->
+<!--         android:showAsAction="never" -->
+<!--         android:title="@string/action_settings"/>     -->
+    
+<!--     <item -->
+<!-- 	    android:actionViewClass="edu.uco.rnolastname.program6.app.ActionSeparatorView" -->
+<!-- 	    android:orderInCategory="2" -->
+<!-- 	    android:showAsAction="always"	     -->
+<!-- 	    android:title="@null"/> -->
+    
+    <item
+        android:id="@+id/action_signup"
+        android:orderInCategory="3"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/ic_signup_submit"
+        android:title="@string/menu_signup"
+        />    
+	
+<!--     <item -->
+<!-- 	    android:actionViewClass="edu.uco.rnolastname.program6.app.ActionSeparatorView" -->
+<!-- 	    android:orderInCategory="4" -->
+<!-- 	    android:showAsAction="always"	     -->
+<!-- 	    android:title="@null"/> -->
+    
+<!--     <item  -->
+<!--         android:id="@+id/action_voicereminder" -->
+<!--         android:orderInCategory="99" -->
+<!--         android:showAsAction="ifRoom" -->
+<!--         android:icon="@drawable/ic_voicereminder" -->
+<!--         android:title="@string/menu_voicereminder" -->
+<!--         /> -->
+    
+<!--     <item  -->
+<!--         android:id="@+id/action_picturereminder" -->
+<!--         android:orderInCategory="5" -->
+<!--         android:showAsAction="ifRoom" -->
+<!--         android:icon="@drawable/ic_picturereminder" -->
+<!--         android:title="@string/menu_picturereminder" -->
+<!--         /> -->
+    
+<!--     <item  -->
+<!--         android:id="@+id/action_calendar" -->
+<!--         android:orderInCategory="3" -->
+<!--         android:showAsAction="ifRoom" -->
+<!--         android:icon="@drawable/ic_calendar" -->
+<!--         android:title="@string/menu_calendar" -->
+<!--         /> -->
+    
+    <item 
+        android:id="@+id/action_reminder"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/reminder_add"
+        android:title="@string/menu_reminder"
+        />
+    
+<!--     <item  -->
+<!--         android:id="@+id/action_mapreminder" -->
+<!--         android:orderInCategory="8" -->
+<!--         android:showAsAction="ifRoom" -->
+<!--         android:icon="@drawable/ic_mapreminder" -->
+<!--         android:title="@string/menu_mapreminder" -->
+<!--         /> -->
+    
+    <item 
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/menu_logout"
+        />
+</menu>
